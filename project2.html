@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>Slider</title>
+<!-- jQuery library (served from Google) -->
+  <link rel="stylesheet" href="responsiveslides.css">
+  <link rel="stylesheet" href="themes.css">
+  <link href="bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="bootstrap-responsive.css" rel="stylesheet" media="screen">
+    <link href="style.css" rel="stylesheet" media="screen">
+    <link type="text/css" rel="stylesheet" href="http://cdn.jsdelivr.net/qtip2/2.2.0/jquery.qtip.min.css" />
+    <link rel="stylesheet" href="tester2.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="responsiveslides.min.js"></script>
+  <script src="slickquiz/jquery.js"></script>
+    <script src="tabletop.js"></script>
+	<script src="newsquiz.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/qtip2/2.2.0/jquery.qtip.min.js"></script>
+
+<script>
+    $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 5000,
+        namespace: "centered-btns"
+      });
+
+    });
+  </script>
+    <script>
+        $(document).ready(function() {      
+$(' .sliderimages').each(function() {
+         $(this).qtip({
+            content: {
+            	text: $(this).next('.tooltiptext')
+            },
+            style: {
+            	classes:'qtip-light qtip-rounded',
+            	width: '100%'},
+            position: {
+        		my: 'bottom center',  // Position my top left...
+       	 		at: 'bottom center', // at the bottom right of...
+       	 	target: $('.sliders')
+    		}
+     });
+
+
+          });
+          });
+    </script>
+</head>
+<body>
+<div id="wrapper">
+<!--TEXT IN BUBBLES JQUERY TOOLTIPS?ROLLOVERS? THEN dont worry about float and aligns
+qtips qquery or onmouseover outmouse popup? or onmouse over out change pic to text white 
+on transparent black??-->
+<div class="rslides_container">
+<ul id="slider1" class="rslides">
+<li>
+  <div class="slide1">
+  	<h1>The Three Branches of Government</h1>
+  	<img src="images/oldgov.jpg" alt="3 branches of government">
+  </div>
+  </li>
+<li>
+  <div class="slides" >
+  	<h1>Constitution</h1>
+  	<a class="sliderimages" href="#sliderimage2"><img class="sliders" src="images/Washington_Constitutional_Convention_1787.jpg" alt="Founding Fathers"></a>
+  	<div class="tooltiptext">
+  		<p>When the Constitution was first made in 1787,  the Founding Fathers wanted to make sure that there was a separation of powers so that no one person had too much control. This led to the formation of the Three Branches of Government: the Legislative Branch, the Executive Branch, and the Judicial Branch. </p>
+  		<p>The three branches of government make sure that no one branch has too much power using the process of checks and balances. This means that each branch has the right to amend the acts taken by other branches in order to maintain the balance of power. </p>
+  	</div>
+  </div>
+</li> 
+<li>
+  <div class="slides">
+  	<h1>Legislative Branch</h1>
+  	<a class="sliderimages" href="#sliderimage4"><img class="sliders" src="images/United_States_Capitol_west_front_edit2.jpg" alt="Congress"></a>
+  	<div class="tooltiptext">
+  		<p>The Legislative branch is the branch of government that makes laws. It is made up of two parts: the Senate and the House of Representatives.</p>
+  		<p>The Senate is made up of a total of 100 senators, with 2 senators from each state.</p>
+  		<p>The House of Representatives has 435 representatives, with the number of representatives from each state dependent on each state's population. </p>
+  	</div>
+  </div>
+</li>
+<li>
+  <div class="slides">
+  	<h1>Senate and House of Representatives</h1>
+  	<a class="sliderimages" href="#sliderimage4"><img class="sliders" src="images/Obama_Health_Care_Speech_to_Joint_Session_of_Congress.jpg" alt="Congress"></a>
+  	<div class="tooltiptext">
+		<p>Currently there are 232 Republicans, 199 Democrats, and 4 vacancies in the House of Representatives.</p>
+		<p> Currently there are 53 Democrats, 45 Republicans, and 2 Independents in the Senate.</p>
+	</div>
+  </div>
+</li>
+<li>
+  <div class="slides">
+  	<h1>Executive Branch</h1>
+  	<a class="sliderimages" href="#sliderimage5"><img class="sliders" src="images/US_Cabinet_official_group_photo_July_26,_2012.jpg" alt="Executive Branch"></a>
+  	<div class="tooltiptext">
+  		<p>The Executive branch is the branch of government that carries out the laws. It is composed of the President, Vice President, and Cabinet members. </p>
+  		<p>The President is the head of state, head of the government as well as the commander-in-chief of the military.</p>
+  		<p>The Vice President supports the president in his roles and is also the presiding officer in the Senate.</p> 
+  		<p>The Cabinet is made up of people nominated by the president and approved by the Senate. They are advisors and heads of various government departments and agencies.</p>
+  	</div>
+  </div>
+</li>
+<li>
+  <div class="slides">
+  	<h1>Judicial Branch</h1>
+  	<a class="sliderimages" href="#sliderimage6"><img class="sliders" src="images/Oblique_facade_2,_US_Supreme_Court.jpg" alt="Supreme Court"></a>
+  	<div class="tooltiptext">
+  		<p>The Judicial branch is made up of the government court system and evaluates laws.</p>
+  		<p>The highest court in the United States is the Supreme Court and is made up of 9 justices, or judges, that are nominated by the President and approved by the Senate. </p>
+  		<p>There are also lower Federal courts that were later created after the Constitution was written.  </p>
+  	</div>
+  </div>
+</li>
+<li>
+  <div class="slides">
+  	<h1>Current Supreme Court Justices</h1>
+  	<a class="sliderimages" href="#sliderimage6"><img class="sliders" src="images/Supreme_Court_US_2010.jpg" alt="Supreme Court"></a>
+  	<div class="tooltiptext">
+  		<p>(Top Row) Sonia Sotomayor, Stephen G. Breyer, Samuel Anthony Alito, Jr., Elena Kagan</p>
+  		<p>(Bottom Row) Clarence Thomas, Antonin Scalia, John G. Roberts, Jr., Anthony M. Kennedy, Ruth Bader Ginsburg</p>
+  	</div>
+  </div>
+</li>
+  <li>
+  	<h1>Tying it all together</h1>
+  	<iframe id="video" src="http://www.youtube.com/embed/Nnqk-yGzYYg" allowfullscreen></iframe>
+  </li>
+  <li><iframe  id="video2"  src='slickquiz.html' allowfullscreen></iframe></li>
+  <li><div class="slides">
+  	<h1>Resources</h1>
+  	<div class="resources">
+		<p><a href="http://commons.wikimedia.org/wiki/File:Diagram_of_the_Federal_Government_and_American_Union_edit.jpg" >Diagram of US government image</a></p>
+		<p><a href="http://en.wikipedia.org/wiki/File:Washington_Constitutional_Convention_1787.jpg" >Constitutional Convention image</a></p>
+		<p><a href="http://en.wikipedia.org/wiki/File:US_Cabinet_official_group_photo_July_26,_2012.jpg" >Cabinet members image</a></p>
+		<p><a href="http://www.uscourts.gov/FederalCourts.aspx" >Federal Courts</a></p>
+		<p><a href="http://en.wikipedia.org/wiki/File:Supreme_Court_US_2010.jpg">Supreme Court Justices 2010 image</a></p>
+		<p><a href="http://en.wikipedia.org/wiki/File:Obama_Health_Care_Speech_to_Joint_Session_of_Congress.jpg">Congress image</a></p>
+		<p><a href="http://kids.usa.gov/three-branches-of-government/index.shtml">Kids.us.gov</a></p>
+		<p><a href="http://www.youtube.com/watch?v=Nnqk-yGzYYg">Separation of Powers</a></p>
+		<p><a href="http://www.supremecourt.gov/about/biographies.aspx" >Supreme Cout Justices</a><p>
+		<p><a href="http://en.wikipedia.org/wiki/File:United_States_Capitol_-_west_front.jpg">US Capitol</a></p>
+		<p><a href="http://commons.wikimedia.org/wiki/File:Oblique_facade_2,_US_Supreme_Court.jpg">Supreme Court Building</a></p>
+		<p><a href="http://clerk.house.gov/member_info/cong.aspx">Members of Congress</a></p>  
+  	</div>
+  </div>
+  </li>
+</ul>
+</div>
+</div>
+
+
+  <!--<p>http://commons.wikimedia.org/wiki/File:Branches_US_gov.jpg</p>-->
+       
+        
+</body>
+<!--
+-->
+</html>
